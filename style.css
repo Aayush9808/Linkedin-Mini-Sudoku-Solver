@@ -336,6 +336,35 @@ footer {
     text-decoration: underline;
 }
 
+.repo-link {
+    margin: 15px 0;
+}
+
+.github-repo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #444;
+}
+
+.github-repo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: #667eea;
+}
+
+.github-repo svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .container {
