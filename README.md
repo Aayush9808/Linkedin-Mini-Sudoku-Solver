@@ -1,11 +1,23 @@
 # 🧩 LinkedIn Mini Sudoku Solver
 
-A beautiful web application to solve LinkedIn's 6×6 Mini Sudoku puzzles instantly! Built with vanilla HTML, CSS, and JavaScript.
+<div align="center">
+
+A beautiful, fast, and intuitive web application to solve LinkedIn's 6×6 Mini Sudoku puzzles instantly! Built with vanilla HTML, CSS, and JavaScript.
 
 **🌐 Live Demo:** [https://linkedin-mini-sudoku-solver.vercel.app](https://linkedin-mini-sudoku-solver.vercel.app)
 
+[![GitHub Stars](https://img.shields.io/github/stars/Aayush9808/Linkedin-Mini-Sudoku-Solver?style=social)](https://github.com/Aayush9808/Linkedin-Mini-Sudoku-Solver/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Aayush9808/Linkedin-Mini-Sudoku-Solver?style=social)](https://github.com/Aayush9808/Linkedin-Mini-Sudoku-Solver/network/members)
+
 ![Mini Sudoku Solver](https://img.shields.io/badge/Sudoku-Solver-purple?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
+
+---
 
 ## ✨ Features
 
@@ -16,6 +28,28 @@ A beautiful web application to solve LinkedIn's 6×6 Mini Sudoku puzzles instant
 - ✅ **Input Validation** - Only accepts numbers 1-6
 - 📱 **Responsive Design** - Works on mobile and desktop
 - 🎲 **Example Puzzle** - Try it out with a pre-loaded puzzle
+- ↩️ **Undo Feature** - Reverse your last entry
+- 🖱️ **Double-click Clear** - Quickly clear any cell
+
+## 📸 Screenshots
+
+### Initial Screen
+![Initial Screen](assets/screenshots/initial-screen.png)
+
+### Puzzle Input (LinkedIn Format)
+<p align="center">
+  <img src="assets/screenshots/linkedin-game.png" width="45%" alt="LinkedIn Original" />
+  <img src="assets/screenshots/puzzle-input.png" width="45%" alt="Puzzle Input" />
+</p>
+
+### Solved Puzzle
+<p align="center">
+  <img src="assets/screenshots/linkedin-solved.png" width="45%" alt="LinkedIn Solved" />
+  <img src="assets/screenshots/puzzle-solved.png" width="45%" alt="Puzzle Solved" />
+</p>
+
+### Features & Instructions
+![Features](assets/screenshots/features.png)
 
 ## 🚀 Quick Start
 
@@ -85,18 +119,21 @@ git push -u origin main
 3. Select your repository
 4. Deploy with one click! ⚡
 
-## 📖 How to Use
+## 🎮 How to Use
 
 1. **Enter Puzzle**: Click on cells and enter numbers 1-6 from your LinkedIn puzzle
-2. **Solve**: Click the "Solve Puzzle" button
-3. **Clear**: Reset the grid to start over
-4. **Example**: Load a sample puzzle to test the solver
+2. **Double-click**: Double-click any cell to clear it quickly
+3. **Solve**: Click the "Solve Puzzle" button to get instant solution
+4. **Undo**: Made a mistake? Use the Undo button
+5. **Clear**: Reset the entire grid with Clear Grid button
+6. **Example**: Load a sample puzzle to test the solver
 
 ### Keyboard Shortcuts
 
-- **Arrow Keys**: Navigate between cells
+- **Arrow Keys**: Navigate between cells (↑ ↓ ← →)
 - **1-6**: Enter numbers
 - **Backspace/Delete**: Clear cell
+- **Double-click**: Clear cell quickly
 
 ## 🎮 Example Puzzle
 
@@ -112,17 +149,21 @@ _ _ 2 _ _ _
 
 ## 🧠 Algorithm
 
-The solver uses a **backtracking algorithm**:
+The solver uses a **backtracking algorithm** with the following approach:
 
-1. Find an empty cell
-2. Try numbers 1-6
-3. Check if the number is valid (row, column, region)
-4. If valid, place it and move to next cell
-5. If stuck, backtrack and try different number
+1. Find an empty cell in the 6×6 grid
+2. Try numbers 1-6 in that cell
+3. Check if the number is valid:
+   - ✅ No duplicates in the same row
+   - ✅ No duplicates in the same column
+   - ✅ No duplicates in the same 2×3 region
+4. If valid, place it and move to next empty cell
+5. If stuck, backtrack and try a different number
 6. Repeat until solved or proven unsolvable
 
-**Time Complexity**: O(6^n) where n is the number of empty cells
-**Space Complexity**: O(36) for the 6×6 grid
+**Time Complexity**: O(6^n) where n is the number of empty cells  
+**Space Complexity**: O(36) for the 6×6 grid  
+**Average Solve Time**: < 10ms ⚡
 
 ## 📁 Project Structure
 
@@ -169,27 +210,45 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
 ## 📝 License
 
-Free to use for personal and educational purposes. Created for solving LinkedIn Mini Sudoku puzzles.
+This project is open source and available for personal and educational purposes.
 
 ## 🤝 Contributing
 
-Feel free to fork, modify, and improve! Some ideas:
-- Add timer functionality
-- Save/load puzzles from localStorage
-- Difficulty indicator
-- Step-by-step solution visualization
-- Multiple puzzle templates
+Contributions are welcome! Some ideas:
+- ⏱️ Add timer functionality
+- 💾 Save/load puzzles from localStorage
+- 📊 Difficulty indicator
+- 🎬 Step-by-step solution visualization
+- 📚 Multiple puzzle templates
+- 🌐 Multi-language support
 
-## 🌟 Credits
+**Steps to contribute:**
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Created with ❤️ for LinkedIn Mini Sudoku enthusiasts
+## 🌟 Show Your Support
 
-## 📞 Support
+If this project helped you solve LinkedIn puzzles faster, give it a ⭐️!
 
-Having issues? Open an issue on GitHub or contact me.
+## 📞 Contact
+
+**Aayush Kumar Shrivastav**
+
+- LinkedIn: [@aayush2209](https://www.linkedin.com/in/aayush2209)
+- GitHub: [@Aayush9808](https://github.com/Aayush9808)
+- Email: ashrivastav2209@gmail.com
 
 ---
 
-**Happy Solving! 🎉**
+<div align="center">
 
-Remember: Every LinkedIn Mini Sudoku puzzle has a unique solution!
+**Made with ❤️ for LinkedIn Mini Sudoku enthusiasts**
+
+Remember: Every LinkedIn Mini Sudoku puzzle has a unique solution! 🎯
+
+[⬆ Back to Top](#-linkedin-mini-sudoku-solver)
+
+</div>
