@@ -2,6 +2,8 @@
 
 A beautiful web application to solve LinkedIn's 6×6 Mini Sudoku puzzles instantly! Built with vanilla HTML, CSS, and JavaScript.
 
+**🌐 Live Demo:** [https://linkedin-mini-sudoku-solver.vercel.app](https://linkedin-mini-sudoku-solver.vercel.app)
+
 ![Mini Sudoku Solver](https://img.shields.io/badge/Sudoku-Solver-purple?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
@@ -32,7 +34,21 @@ open index.html
 
 ## 🌐 Deployment Options
 
-### Option 1: Netlify (Recommended - Easiest)
+### Option 1: Vercel (Recommended - Fastest)
+
+1. Go to [Vercel](https://vercel.com/)
+2. Sign up for a free account
+3. Click "Add New" → "Project"
+4. Import your GitHub repository
+5. Click "Deploy" - Done! 🎉
+
+**Or use Vercel CLI:**
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+### Option 2: Netlify
 
 1. Go to [Netlify](https://www.netlify.com/)
 2. Sign up for a free account
@@ -43,20 +59,6 @@ open index.html
 ```bash
 npm install -g netlify-cli
 netlify deploy --prod
-```
-
-### Option 2: Vercel
-
-1. Go to [Vercel](https://vercel.com/)
-2. Sign up with GitHub
-3. Click "New Project"
-4. Import your repository
-5. Deploy! 🚀
-
-**Or use Vercel CLI:**
-```bash
-npm install -g vercel
-vercel --prod
 ```
 
 ### Option 3: GitHub Pages
