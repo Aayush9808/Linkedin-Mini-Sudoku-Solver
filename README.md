@@ -55,8 +55,8 @@ A beautiful, fast, and intuitive web application to solve LinkedIn's 6×6 Mini S
 
 ### Local Development
 
-1. Clone or download this repository
-2. Open `index.html` in your web browser
+1. Clone or download this repository.
+2. Open `index.html` in your web browser.
 3. That's it! No build process required.
 
 ```bash
